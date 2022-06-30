@@ -41,7 +41,7 @@ const Landing = () => {
           <div className='mr-16'>
             <h1 className='text-4xl font-bold text-flower-yellow'>shop</h1>
             <ul>
-              <li className='text-xl text-flower-yellow cursor-pointer mt-2'>flowers</li>
+              <li className='text-xl text-flower-yellow cursor-pointer mt-2'>deals</li>
               <li className='text-xl text-flower-yellow cursor-pointer mt-2'>gift shop</li>
               <li className='text-xl text-flower-yellow cursor-pointer mt-2'>specials</li>
               <li className='text-xl text-flower-yellow cursor-pointer mt-2'>seasonal offers</li>
