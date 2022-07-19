@@ -9,7 +9,7 @@ const MobileNav = () => {
   let { MobileNavOpen, setMobileNavOpen } = useContext(MenuContext)
 
   return (
-    <div className='fixed z-20 w-3/4 h-full bg-white'>
+    <div className='fixed z-20 w-3/4 h-full bg-white right-0'>
       <div className='flex '>
         <img onClick={() => setMobileNavOpen(false)} src={arrow} alt="" className='cursor-pointer mr-8' />
         <img src={logo} alt="" className='cursor-pointer mx-auto' />

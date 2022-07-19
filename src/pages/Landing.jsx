@@ -46,7 +46,7 @@ const Landing = () => {
 
         </div>
 
-        <div className='pt-10 pb-10 pl-10'>
+        <div className='pt-10 pb-10 pl-6'>
           <div className='flex'>
             <div className='mr-16'>
               <h1 className='text-4xl font-bold text-flower-yellow'>shop</h1>

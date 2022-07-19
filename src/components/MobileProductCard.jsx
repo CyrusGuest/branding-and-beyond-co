@@ -10,7 +10,7 @@ const ProductCard = () => {
       <div className='ml-5'>
         <h3 className='font-bold'>roof repair</h3>
         <p>full restoration and repair</p>
-        <div className='flex mx-0 py-0 mt-4 '>
+        <div className='flex mx-0 py-0 mt-2 '>
           <img className='mr-3 cursor-pointer drop-shadow-lg' src={cart} alt=""/>
           <img src={price} alt="" />
         </div>
