@@ -1,11 +1,13 @@
 module.exports = {
+  darkMode: "class",
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        "flower-yellow": "#2d5dd2",
+        "brand-primary": "#F5D47E",
+        "brand-secondary": "#50483E",
       }
     },
     fontFamily: {

@@ -1,22 +1,25 @@
 import React, { useContext } from 'react'
 import logo from '../../images/logo.svg'
+import darkLogo from '../../images/dark_mode/logo.svg'
 import menuDots from '../../images/menu-dots.svg'
+import darkMenuDots from '../../images/dark_mode/menu-dots.svg'
 import arrow from '../../images/arrow.svg'
+import darkArrow from '../../images/dark_mode/arrow.svg'
 import { Link } from 'react-router-dom'
 import { MenuContext } from '../context/MenuContext'
 
 const MobileNav = () => {
-  let { MobileNavOpen, setMobileNavOpen } = useContext(MenuContext)
+  let { MobileNavOpen, setMobileNavOpen, LightMode } = useContext(MenuContext)
 
   return (
-    <div className='fixed z-20 w-3/4 h-full bg-white right-0'>
+    <div className='fixed z-20 w-3/4 h-full bg-white dark:bg-brand-primary right-0'>
       <div className='flex '>
-        <img onClick={() => setMobileNavOpen(false)} src={arrow} alt="" className='cursor-pointer mr-8' />
-        <img src={logo} alt="" className='cursor-pointer mx-auto' />
-        <img onClick={() => setMobileNavOpen(!MobileNavOpen)} src={menuDots} alt="" className='my-auto ml-auto mr-4 float-right cursor-pointer' />
+        {LightMode ? <img onClick={() => setMobileNavOpen(false)} src={arrow} alt="" className='cursor-pointer mr-8' /> : <img onClick={() => setMobileNavOpen(false)} src={darkArrow} alt="" className='cursor-pointer mr-8' />}
+        {LightMode ? <img src={logo} alt="" className='cursor-pointer mx-auto' /> : <img src={darkLogo} alt="" className='cursor-pointer mx-auto' />}
+        {LightMode ? <img onClick={() => setMobileNavOpen(!MobileNavOpen)} src={menuDots} alt="" className='cursor-pointer ml-auto mr-4' /> : <img onClick={() => setMobileNavOpen(!MobileNavOpen)} src={darkMenuDots} alt="" className='cursor-pointer ml-auto mr-4' />}
       </div>
 
-      <div className='flex flex-col ml-6 mt-10 text-flower-yellow gap-10'>
+      <div className='flex flex-col ml-6 mt-10 text-brand-primary dark:text-white gap-10'>
         <ul>
           <h1 className='font-bold text-5xl'>shop</h1>
           <div className='text-2xl'>
