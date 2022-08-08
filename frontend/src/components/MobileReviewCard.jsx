@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { MenuContext } from '../context/MenuContext'
+import { AppContext } from '../context/AppContext'
 import customerIcon from '../../images/customer-icon.svg'
 import darkCustomerIcon from '../../images/dark_mode/customer-icon.svg'
 
 const MobileReviewCard = () => {
-  let { LightMode } = useContext(MenuContext)
+  let { LightMode } = useContext(AppContext)
 
   return (
     <div className='font-Poppins w-4/5 py-10 px-4 bg-brand-primary rounded-lg mx-auto mt-20 mb-28 drop-shadow-lg md:hidden lg:hidden'>

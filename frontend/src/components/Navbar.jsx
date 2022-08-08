@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { MenuContext } from '../context/MenuContext'
+import { AppContext } from '../context/AppContext'
 import { Link } from 'react-router-dom'
 import logo from '../../images/logo.svg'
 import lightMode from '../../images/light-mode.svg'
@@ -7,8 +7,8 @@ import darkMode from '../../images/dark-mode.svg'
 import menuDots from '../../images/menu-dots.svg'
 
 const Navbar = () => {
-  let { MobileNavOpen, setMobileNavOpen } = useContext(MenuContext)
-  let { LightMode, setLightMode } = useContext(MenuContext)
+  let { MobileNavOpen, setMobileNavOpen } = useContext(AppContext)
+  let { LightMode, setLightMode } = useContext(AppContext)
   
   useEffect(() => {
     if (localStorage.theme === 'dark') {
@@ -40,7 +40,7 @@ const Navbar = () => {
           <li className='my-auto'><Link to="/packages">packages</Link></li>
           <li className='my-auto'><Link to="/aboutus">about us</Link></li>
           <li className='my-auto'><Link to="/contactus">contact us</Link></li>
-          <Link to="/signin"><li className='my-auto cursor-pointer dark:hover:bg-brand-secondary hover:bg-white dark:hover:text-brand-primary hover:text-brand-primary bg-brand-primary text-white dark:text-brand-secondary drop-shadow-lg py-2 px-6 font-semibold rounded-md transition duration-300'>sign in</li></Link>
+          <Link to="/signin"><li className='my-auto cursor-pointer dark:hover:bg-brand-secondary hover:bg-white dark:hover:text-brand-primary hover:text-brand-primary bg-brand-primary text-white dark:text-brand-secondary drop-shadow-lg py-2 mt-1 px-6 font-semibold rounded-md transition duration-300'>sign in</li></Link>
           {LightMode ? <li className='my-auto'><img src={lightMode} alt="" className='transition-all cursor-pointer' onClick={switchLightMode} /></li> : <li className='my-auto'><img src={darkMode} alt="" className='transition-all cursor-pointer' onClick={switchLightMode} /></li>}
         </ul>
       </div>

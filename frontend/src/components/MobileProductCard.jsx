@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { MenuContext } from '../context/MenuContext'
+import { AppContext } from '../context/AppContext'
 import { Link } from 'react-router-dom'
 import roofIcon from '../../images/roof-icon.svg'
 import cart from '../../images/cart.svg'
@@ -7,7 +7,7 @@ import darkCart from '../../images/dark_mode/cart.svg'
 import price from '../../images/price.svg'
 
 const ProductCard = ({ topCard }) => {
-  let { LightMode } = useContext(MenuContext)
+  let { LightMode } = useContext(AppContext)
 
   if (topCard) {
     return (

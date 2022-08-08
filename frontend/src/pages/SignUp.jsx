@@ -2,12 +2,10 @@ import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
 import MobileNav from '../components/MobileNav'
 import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Explore from '../components/Explore'
-import DesktopExplore from '../components/DesktopExplore'
+import SignUpForm from '../components/SignUpForm'
 import Footer from '../components/Footer'
 
-const Landing = () => {
+const SignUp = () => {
   let { MobileNavOpen } = useContext(AppContext)
 
   return (
@@ -19,11 +17,7 @@ const Landing = () => {
 
         <Navbar />
 
-        <Hero />
-
-        <Explore />
-
-        <DesktopExplore />
+        <SignUpForm />
 
         <Footer />
 
@@ -33,4 +27,4 @@ const Landing = () => {
   )
 }
 
-export default Landing
+export default SignUp

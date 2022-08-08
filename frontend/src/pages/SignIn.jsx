@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
-import { MenuContext } from '../context/MenuContext'
+import { AppContext } from '../context/AppContext'
 import MobileNav from '../components/MobileNav'
 import Navbar from '../components/Navbar'
 import SignInForm from '../components/SignInForm'
 import Footer from '../components/Footer'
 
 const SignIn = () => {
-  let { MobileNavOpen } = useContext(MenuContext)
+  let { MobileNavOpen } = useContext(AppContext)
 
   return (
     <div className='font-Poppin dark:bg-brand-secondary transition-all'>

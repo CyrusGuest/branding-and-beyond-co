@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { MenuContext } from '../context/MenuContext'
+import { AppContext } from '../context/AppContext'
 import { Link } from 'react-router-dom'
 import customerIcon from '../../images/customer-icon.svg'
 import darkCustomerIcon from '../../images/dark_mode/customer-icon.svg'
@@ -7,7 +7,7 @@ import roofIcon from '../../images/roof-icon.svg'
 import price from '../../images/price.svg'
 
 const DesktopReviewCard = () => {
-  let { LightMode } = useContext(MenuContext)
+  let { LightMode } = useContext(AppContext)
 
   return (
     <div className='font-Poppins w-4/5 max-w-4xl bg-brand-primary rounded-lg mx-auto mt-20 mb-40 drop-shadow-lg hidden md:flex'>
