@@ -1,33 +1,31 @@
 import React, { useState, useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { createClient } from '@supabase/supabase-js'
+import { Link, useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 
 const SignUpForm = () => {
+  let navigate = useNavigate()  
   let [email, setEmail] = useState('')
   let [password, setPassword] = useState('')
-  let { User, setUser } = useContext(AppContext)
+  let { User, setUser, supabase } = useContext(AppContext)
 
-  const supabaseUrl = 'https://enbpozxucdfjzrqzgvds.supabase.co'
-  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVuYnBvenh1Y2RmanpycXpndmRzIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTkyMjg0NjUsImV4cCI6MTk3NDgwNDQ2NX0.RwxtINpOIcOSKkzqujV8pEfZA0ZkVtxp2P-n_dn3OBE'
-  const supabase = createClient(supabaseUrl, supabaseKey)
+  const handleSignupSuccess = (response) => {
+    setUser(response.user)
+
+    navigate('/')
+  }
+
+  const handleSignupFailure = (error) => {
+    console.log(error)
+  }
 
   const signUserUp = async (e) => {
     e.preventDefault()
 
-    let { returnedUser, error } = await supabase.auth.signUp({
-      email,
-      password
-    })
+    let user = { email, password }
+    let response = await supabase.auth.signUp(user)
 
-    if (error) {
-      console.log(error)
-    }
-
-    if (returnedUser) {
-      setUser(returnedUser)
-      console.log(User)
-    }
+    if (response.user) handleSignupSuccess(response)
+    if (response.error) handleSignupFailure(response.error)
 
     setEmail('')
     setPassword('')
