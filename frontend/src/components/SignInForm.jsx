@@ -1,18 +1,34 @@
 import React, { useState, useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 
 const SignInForm = () => {
+  let navigate = useNavigate()  
   let [email, setEmail] = useState('')
   let [password, setPassword] = useState('')
-  let { User, setUser } = useContext(AppContext)
+  let { User, setUser, supabase } = useContext(AppContext)
 
+  const handleSignInSuccess = (response) => {
+    setUser(response.user)
 
+    navigate('/account')
+    console.log(User)
+  }
+
+  const handlesignInFailure = (error) => {
+    console.log(error)
+  }
 
   const signUserIn = async (e) => {
     e.preventDefault()
 
+    let user = { email, password }
+    setEmail('')
+    setPassword('')
+    let response = await supabase.auth.signIn(user)
 
+    if (response.user) handleSignInSuccess(response)
+    if (response.error) handlesignInFailure(response.error)
   }
 
   return (

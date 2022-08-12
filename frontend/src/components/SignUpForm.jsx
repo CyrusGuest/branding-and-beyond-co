@@ -11,7 +11,7 @@ const SignUpForm = () => {
   const handleSignupSuccess = (response) => {
     setUser(response.user)
 
-    navigate('/')
+    navigate('/account')
   }
 
   const handleSignupFailure = (error) => {
@@ -22,13 +22,12 @@ const SignUpForm = () => {
     e.preventDefault()
 
     let user = { email, password }
+    setEmail('')
+    setPassword('')
     let response = await supabase.auth.signUp(user)
 
     if (response.user) handleSignupSuccess(response)
     if (response.error) handleSignupFailure(response.error)
-
-    setEmail('')
-    setPassword('')
   }
 
   return (
