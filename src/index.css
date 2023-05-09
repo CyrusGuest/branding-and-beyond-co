@@ -8,10 +8,6 @@
   @apply drop-shadow-lg py-3 px-6 font-semibold rounded-lg transition duration-300;
 }
 
-.btn {
-  @apply drop-shadow-lg py-3 px-6 font-semibold rounded-lg transition duration-300;
-}
-
 .gradient-background {
   opacity: 80%;
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
@@ -37,6 +33,7 @@
   cursor: pointer;
   z-index: 0;
   border-radius: 10px;
+  position: relative;
 }
 
 .glow-on-hover:before {
@@ -85,6 +82,7 @@
   outline: none;
   color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   cursor: pointer;
+  position: relative;
   z-index: 0;
   width: full;
   border-radius: 10px;
@@ -114,9 +112,9 @@
 .glow-on-hover-transparent:after {
   z-index: -1;
   content: '';
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: absolute;
   background: white;
   color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   left: 0;

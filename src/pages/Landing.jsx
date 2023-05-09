@@ -12,7 +12,7 @@ const Landing = () => {
   let { MobileNavOpen } = useContext(AppContext);
 
   return (
-    <div className="font-Poppin transition-all">
+    <div className="font-Poppin dark:bg-brand-secondary transition-all">
       {MobileNavOpen ? <MobileNav /> : ""}
 
       <div className={MobileNavOpen ? "opacity-50" : "opacity-100"}>
