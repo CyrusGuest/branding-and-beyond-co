@@ -1,5 +1,11 @@
-<svg width="12" height="47" viewBox="0 0 12 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6" r="6" fill="#375075"/>
-<circle cx="6" cy="24" r="6" fill="#375075"/>
-<circle cx="6" cy="41" r="6" fill="#375075"/>
+<svg width="12" height="47" viewBox="0 0 12 47" fill="url('#myGradient')" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="myGradient" gradientTransform="rotate(90)">
+    <stop offset="0%" stop-color="rgba(131,58,180,1)"/>
+    <stop offset="45%" stop-color="rgba(253,29,29,1)"/>
+    <stop offset="95%" stop-color="rgba(252,176,69,1)"/>
+  </linearGradient>
+  
+  <circle cx="6" cy="6" r="6" fill="url('#myGradient')"/>
+  <circle cx="6" cy="24" r="6" fill="url('#myGradient')"/>
+  <circle cx="6" cy="41" r="6" fill="url('#myGradient')"/>
 </svg>
