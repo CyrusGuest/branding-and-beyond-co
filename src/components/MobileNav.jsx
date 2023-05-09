@@ -52,7 +52,7 @@ const MobileNav = () => {
 
         <Link
           onClick={() => setMobileNavOpen(false)}
-          className="text-white glow-on-hover mr-6 fixed bottom-10 w-8/12 text-3xl text-center cursor-pointer drop-shadow-lg py-3 gradient-background px-6 font-semibold rounded-md transition duration-300"
+          className="text-white glow-on-hover-fixed mr-6 fixed bottom-10 w-8/12 text-3xl text-center cursor-pointer drop-shadow-lg py-3 gradient-background px-6 font-semibold rounded-md transition duration-300"
           to="/contactus"
         >
           contact us

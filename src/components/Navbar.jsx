@@ -10,17 +10,17 @@ const Navbar = () => {
   return (
     <div className="flex">
       <Link to="/">
-        <div className="flex mt-6 ml-4 w-52">
+        <div className="flex mt-6 ml-4 w-36 md:w-52">
           <img src={logo} alt="" className="cursor-pointer" />
         </div>
       </Link>
 
       <div className="my-auto ml-auto hidden md:inline">
         <ul className="flex gap-6 mr-6 text-2xl font-bold ">
-          <li className="my-auto gradient-text">
+          <li className="my-auto gradient-text hover:-rotate-6 hover:text-3xl duration-200">
             <Link to="/packages">packages</Link>
           </li>
-          <li className="my-auto gradient-text">
+          <li className="my-auto gradient-text hover:rotate-6 hover:text-3xl duration-200">
             <Link to="/casestudies">case studies</Link>
           </li>
           <Link to="/contactus">

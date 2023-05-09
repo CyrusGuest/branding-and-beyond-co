@@ -53,11 +53,9 @@ const Footer = () => {
             name="email"
             id="email"
           />
-          <div className="mt-4 mobile-btn w-4/5 text-center">
-            <span className="text-2xl gradient-text glow-on-hover-transparent">
-              subscribe
-            </span>
-          </div>
+          <button className="mt-4 mobile-btn w-4/5 shadow-lg glow-on-hover-transparent text-center">
+            <span className="text-2xl w-4/5 gradient-text">subscribe</span>
+          </button>
         </form>
       </div>
 
@@ -70,12 +68,12 @@ const Footer = () => {
             alt=""
           />
           <img
-            className="cursor-pointer hover:rotate-45 duration-200"
+            className="cursor-pointer hover:rotate-180  duration-200"
             src={pinterestLogo}
             alt=""
           />
           <img
-            className="cursor-pointer hover:rotate-180 duration-200 w-14"
+            className="cursor-pointer hover:-rotate-45 duration-200 w-14"
             src={instaLogo}
             alt=""
           />
