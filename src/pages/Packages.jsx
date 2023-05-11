@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { AppContext } from "../context/AppContext";
+import MobileNav from "../components/MobileNav";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Packages = () => {
-  return (
-    <div>Packages - WIP</div>
-  )
-}
+  let { MobileNavOpen } = useContext(AppContext);
 
-export default Packages
+  return (
+    <div className="font-Poppin dark:bg-brand-secondary transition-all">
+      {MobileNavOpen ? <MobileNav /> : ""}
+
+      <div className={MobileNavOpen ? "opacity-50" : "opacity-100"}>
+        <Navbar />
+
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default Packages;
