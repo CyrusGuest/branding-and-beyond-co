@@ -20,7 +20,7 @@ const Explore = () => {
         </button>
       </Link>
 
-      <MobileProductCard />
+      <MobileProductCard topCard={true} />
     </div>
   );
 };
