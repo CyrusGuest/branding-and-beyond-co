@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link to="/casestudies">case studies</Link>
           </li>
           <Link to="/contactus">
-            <li className="my-auto cursor-pointer gradient-background text-white glow-on-hover drop-shadow-lg py-2 mt-1 px-6 font-semibold rounded-md transition duration-300">
+            <li className="my-auto cursor-pointer gradient-background text-white glow-on-hover shadow-lg py-2 mt-1 px-6 font-semibold rounded-md transition duration-300">
               contact us
             </li>
           </Link>

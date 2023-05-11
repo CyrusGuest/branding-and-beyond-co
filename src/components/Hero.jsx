@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DesktopReviewCard from "./DesktopReviewCard";
+import nf3 from "../../images/examplework.png";
 
 const Hero = () => {
   return (
@@ -8,12 +8,9 @@ const Hero = () => {
       <h1 className="md:max-w-2xl max-w-md mx-auto mt-20 md:mt-28 text-center text-5xl md:text-6xl font-bold gradient-text">
         your one-stop-shop for everything advertising related
       </h1>
-      <h3 className="leading-10 mt-8 md:max-w-2xl max-w-md mx-auto text-2xl text-[#999999] text-center ">
-        The{" "}
-        <span className="gradient-text dark:text-brand-primary font-bold">
-          one-stop-shop
-        </span>{" "}
-        for comprehensive digital development solutions.
+      <h3 className="leading-10 mt-8 md:max-w-2xl max-w-md mx-auto text-2xl text-[#999999] text-center">
+        The <span className="gradient-text font-bold">one-stop-shop</span> for
+        comprehensive digital development solutions.
       </h3>
       <div className="flex justify-center mt-10 space-x-6">
         <Link to="/packages">
@@ -27,7 +24,10 @@ const Hero = () => {
           </span>
         </Link>
       </div>
-      <DesktopReviewCard />
+      <img
+        src={nf3}
+        className="rounded-lg shadow-lg mx-auto w-4/5 max-w-4xl mt-20 mb-40 flex"
+      />
     </div>
   );
 };

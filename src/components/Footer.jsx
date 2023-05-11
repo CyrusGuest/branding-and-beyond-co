@@ -12,17 +12,17 @@ const Footer = () => {
           <h1 className="text-4xl font-bold gradient-text ">company</h1>
           <ul>
             <Link to="/aboutus">
-              <li className="text-xl gradient-text  cursor-pointer mt-2">
+              <li className="text-xl gradient-text cursor-pointer mt-2">
                 about us
               </li>
             </Link>
             <Link to="/contactus">
-              <li className="text-xl gradient-text  cursor-pointer mt-2">
+              <li className="text-xl gradient-text cursor-pointer mt-2">
                 contact us
               </li>
             </Link>
             <Link to="/policy">
-              <li className="text-xl gradient-text    cursor-pointer mt-2">
+              <li className="text-xl gradient-text cursor-pointer mt-2">
                 policy
               </li>
             </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h1 className="text-4xl font-bold gradient-text  ">shop</h1>
+          <h1 className="text-4xl font-bold gradient-text">shop</h1>
           <ul>
             <Link to="/packages">
               <li className="text-xl gradient-text  cursor-pointer mt-2">
@@ -47,7 +47,7 @@ const Footer = () => {
         </h1>
         <form action="" className="flex flex-col">
           <input
-            className="mt-6 w-4/5 text-2xl gradient-background dark:text-brand-secondary rounded-lg pl-4 py-2 text-white dark:placeholder:text-brand-secondary placeholder:text-white outline-none drop-shadow-lg"
+            className="mt-6 w-4/5 text-2xl gradient-background rounded-lg pl-4 py-2 text-white placeholder:text-white outline-none drop-shadow-lg"
             placeholder="Email Address*"
             type="email"
             name="email"
