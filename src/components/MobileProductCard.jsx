@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import piechart from "../../images/piechart.svg";
 import brand from "../../images/brand.svg";
 
@@ -20,9 +21,12 @@ const ProductCard = ({ topCard }) => {
               <span className="font-bold">$1,999.99/mo</span> or
             </h1>
 
-            <button className="mt-2 glow-on-hover-transparent flex mx-0 py-0 text-black mobile-btn bg-white">
+            <Link
+              to="/contactus"
+              className="mt-2 glow-on-hover-transparent flex mx-0 py-0 text-black mobile-btn bg-white"
+            >
               <span className="gradient-text">get quote</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -39,9 +43,18 @@ const ProductCard = ({ topCard }) => {
           solutions to our clients.
         </p>
 
-        <button className="glow-on-hover-transparent flex mx-0 py-0 mt-2 text-black mobile-btn bg-white">
-          <span className="gradient-text">get quote</span>
-        </button>
+        <div className="flex gap-2">
+          <h1 className="text-xl mt-4">
+            <span className="font-bold">$2,499.99/mo</span> or
+          </h1>
+
+          <Link
+            to="/contactus"
+            className="mt-2 glow-on-hover-transparent flex mx-0 py-0 text-black mobile-btn bg-white"
+          >
+            <span className="gradient-text">get quote</span>
+          </Link>
+        </div>
       </div>
 
       <img className="w-1/5 mx-auto md:max-w-xs" src={brand} />

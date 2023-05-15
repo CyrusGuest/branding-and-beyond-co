@@ -8,6 +8,7 @@ import ContactUs from "./pages/ContactUs";
 import Policy from "./pages/Policy";
 import Account from "./pages/Account";
 import CaseStudies from "./pages/CaseStudies";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
