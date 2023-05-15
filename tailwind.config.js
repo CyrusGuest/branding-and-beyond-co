@@ -1,6 +1,11 @@
 module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  variants: {
+    extend: {
+      animation: ["hover", "focus", "group-hover"],
+    },
+  },
   theme: {
     extend: {
       colors: {

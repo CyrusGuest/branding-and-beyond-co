@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/fontawesome-free-solid";
 import axios from "axios";
 
 const Contact = () => {
   let [email, setEmail] = useState("");
   let [subject, setSubject] = useState("");
   let [content, setContent] = useState("");
+  let [loading, setLoading] = useState(false);
+  let [complete, setComplete] = useState(false);
 
   const submitMessage = async (e) => {
     e.preventDefault();
+
+    setLoading(true);
 
     const res = await axios.post(
       "https://api.brandingandbeyond.org/api/v1/create-message",
@@ -18,24 +25,58 @@ const Contact = () => {
       }
     );
 
-    console.log(res);
+    setLoading(false);
+
+    if (res.status === 200) setComplete(true);
 
     setEmail("");
     setSubject("");
     setContent("");
   };
 
+  if (complete)
+    return (
+      <div className="gradient-background drop-shadow-lg w-2/3 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+        <h1 className="text-5xl font-bold my-2">Contact us</h1>
+        <p className="text-xl">
+          We'll get back to you within one business day.
+        </p>
+
+        <div className="text-2xl my-20">
+          <h1>Your message has been succesfully received!</h1>
+          <Link to="/" className="font-bold underline">
+            Return home
+          </Link>
+        </div>
+      </div>
+    );
+
+  if (loading)
+    return (
+      <div className="gradient-background drop-shadow-lg w-2/3 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+        <h1 className="text-5xl font-bold my-2">Contact us</h1>
+        <p className="text-xl">
+          We'll get back to you within one business day.
+        </p>
+
+        <FontAwesomeIcon
+          className="text-6xl animate-spin my-20"
+          icon="fa-solid fa-spinner"
+        />
+      </div>
+    );
+
   return (
     <div className="gradient-background drop-shadow-lg w-2/3 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
-      <h1 className="text-5xl font-bold my-2">contact us</h1>
-      <p className="text-xl">we'll get back to you within one business day.</p>
+      <h1 className="text-5xl font-bold my-2">Contact us</h1>
+      <p className="text-xl">We'll get back to you within one business day.</p>
 
       <form className="flex flex-col">
         <input
           className="rounded-lg drop-shadow-lg text-black text-xl my-3 py-2 px-3 w-3/4 mx-auto bg-white outline-none"
           type="email"
           id="email"
-          placeholder="email"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -44,7 +85,7 @@ const Contact = () => {
           className="rounded-lg text-black shadow-lg text-xl my-3 py-2 px-3 w-3/4 mx-auto bg-white outline-none"
           type="text"
           id="subject"
-          placeholder="subject"
+          placeholder="Subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
         />
@@ -54,7 +95,7 @@ const Contact = () => {
           type="text"
           rows="5"
           id="content"
-          placeholder="content"
+          placeholder="Content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
