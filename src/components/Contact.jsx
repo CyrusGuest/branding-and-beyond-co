@@ -11,8 +11,17 @@ const Contact = () => {
   let [loading, setLoading] = useState(false);
   let [complete, setComplete] = useState(false);
 
+  const validEmail = new RegExp(
+    "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
+  );
+
   const submitMessage = async (e) => {
     e.preventDefault();
+
+    if (!validEmail.test(email)) {
+      alert("please enter a valid email address");
+      return;
+    }
 
     setLoading(true);
 
@@ -36,7 +45,7 @@ const Contact = () => {
 
   if (complete)
     return (
-      <div className="gradient-background drop-shadow-lg w-2/3 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+      <div className="gradient-background drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
         <h1 className="text-5xl font-bold my-2">Contact us</h1>
         <p className="text-xl">
           We'll get back to you within one business day.
@@ -53,7 +62,7 @@ const Contact = () => {
 
   if (loading)
     return (
-      <div className="gradient-background drop-shadow-lg w-2/3 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+      <div className="gradient-background drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
         <h1 className="text-5xl font-bold my-2">Contact us</h1>
         <p className="text-xl">
           We'll get back to you within one business day.
@@ -67,7 +76,7 @@ const Contact = () => {
     );
 
   return (
-    <div className="gradient-background drop-shadow-lg w-2/3 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+    <div className="gradient-background drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
       <h1 className="text-5xl font-bold my-2">Contact us</h1>
       <p className="text-xl">We'll get back to you within one business day.</p>
 
