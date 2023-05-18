@@ -18,7 +18,7 @@ const ProductCard = ({ topCard }) => {
 
           <div className="flex gap-2">
             <h1 className="text-xl mt-4">
-              <span className="font-bold">$1,999.99/mo</span> or
+              <span className="font-bold">$499/mo</span> or
             </h1>
 
             <Link
@@ -45,7 +45,7 @@ const ProductCard = ({ topCard }) => {
 
         <div className="flex gap-2">
           <h1 className="text-xl mt-4">
-            <span className="font-bold">$2,499.99/mo</span> or
+            <span className="font-bold">$1999/mo</span> or
           </h1>
 
           <Link

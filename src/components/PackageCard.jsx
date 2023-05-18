@@ -1,5 +1,6 @@
 import React from "react";
 import Check from "../../images/checkmark.svg";
+import { Link } from "react-router-dom";
 
 const PackageCard = ({ packageType }) => {
   if (packageType === "basic") {
@@ -46,16 +47,19 @@ const PackageCard = ({ packageType }) => {
           </div>
         </div>
 
-        <button className="gradient-background text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover">
+        <Link
+          to="/contactus"
+          className="gradient-background text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+        >
           Get Started
-        </button>
+        </Link>
       </div>
     );
   }
 
   if (packageType === "standard") {
     return (
-      <div className="shadow-lg flex flex-col p-6 w-96 md:w-80 mx-auto">
+      <div className="shadow-lg flex flex-col p-6 w-96 md:w-80 mx-auto rounded-lg">
         <h4 className="text-xl gradient-text">Standard</h4>
         <h2 className="mt-2 text-sm text-slate-600">
           <span className="gradient-text font-bold text-4xl">$999</span> / month
@@ -97,16 +101,19 @@ const PackageCard = ({ packageType }) => {
           </div>
         </div>
 
-        <button className="gradient-background text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover">
+        <Link
+          to="/contactus"
+          className="gradient-background text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+        >
           Get Started
-        </button>
+        </Link>
       </div>
     );
   }
 
   if (packageType === "premium") {
     return (
-      <div className="shadow-lg flex flex-col p-6 w-96 md:w-80 mx-auto">
+      <div className="shadow-lg flex flex-col p-6 w-96 md:w-80 mx-auto rounded-lg">
         <h4 className="text-xl gradient-text">Premium</h4>
         <h2 className="mt-2 text-sm text-slate-600">
           <span className="gradient-text font-bold text-4xl">$1999</span> /
@@ -149,9 +156,12 @@ const PackageCard = ({ packageType }) => {
           </div>
         </div>
 
-        <button className="gradient-background text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover">
+        <Link
+          to="/contactus"
+          className="gradient-background text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+        >
           Get Started
-        </button>
+        </Link>
       </div>
     );
   }

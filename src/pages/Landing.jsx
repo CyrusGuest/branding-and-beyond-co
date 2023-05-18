@@ -7,6 +7,7 @@ import Explore from "../components/Explore";
 import DesktopExplore from "../components/DesktopExplore";
 import Footer from "../components/Footer";
 import BarCarousel from "../components/BarCarousel";
+import LandingGraphic from "../components/LandingGraphic";
 
 const Landing = () => {
   let { MobileNavOpen } = useContext(AppContext);
@@ -19,6 +20,8 @@ const Landing = () => {
         <Navbar />
 
         <Hero />
+
+        <LandingGraphic />
 
         <BarCarousel />
 

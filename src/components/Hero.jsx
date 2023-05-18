@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import nf3 from "../../images/examplework.png";
+import MainGraphic from "../../images/maingraphic.svg";
 
 const Hero = () => {
   return (
@@ -24,10 +24,6 @@ const Hero = () => {
           </span>
         </Link>
       </div>
-      <img
-        src={nf3}
-        className="rounded-lg shadow-lg mx-auto w-4/5 max-w-4xl mt-20 mb-40 flex"
-      />
     </div>
   );
 };
