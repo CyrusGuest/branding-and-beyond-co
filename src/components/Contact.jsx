@@ -112,7 +112,7 @@ const Contact = () => {
         />
 
         <button
-          className="bg-white w-2/5 mx-auto my-8 glow-on-hover-transparent py-2 rounded-lg drop-shadow-lg font-bold text-xl transition-all"
+          className="bg-white w-2/5 btn mx-auto my-8 glow-on-hover-transparent py-2 rounded-lg drop-shadow-lg font-bold text-xl transition-all"
           onClick={(e) => submitMessage(e)}
         >
           <span className="text-primary">send</span>

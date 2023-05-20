@@ -10,7 +10,7 @@ const Hero = () => {
         everything advertising related
       </h1>
       <h3 className="mt-8 md:max-w-2xl max-w-md mx-auto text-xl md:text-2xl text-[#999999] text-center">
-        Digital development solutions, tailored personally to your buisness'
+        Digital development solutions, tailored personally to your business'
         needs.
       </h3>
       <div className="flex justify-center mt-10 space-x-6">
@@ -19,10 +19,10 @@ const Hero = () => {
             our packages
           </button>
         </Link>
-        <Link to="/contactus" className="mt-3">
-          <span className="text-xl md:text-2xl btn shadow-lg bg-accent text-white">
+        <Link to="/contactus">
+          <button className="text-xl btn md:text-2xl btn shadow-lg bg-accent text-white">
             contact us
-          </span>
+          </button>
         </Link>
       </div>
     </div>

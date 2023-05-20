@@ -49,7 +49,7 @@ const PackageCard = ({ packageType }) => {
 
         <Link
           to="/contactus"
-          className="bg-primary text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+          className="bg-primary btn text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started
         </Link>
@@ -103,7 +103,7 @@ const PackageCard = ({ packageType }) => {
 
         <Link
           to="/contactus"
-          className="bg-primary text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+          className="bg-primary btn text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started
         </Link>
@@ -157,7 +157,7 @@ const PackageCard = ({ packageType }) => {
 
         <Link
           to="/contactus"
-          className="bg-primary text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+          className="bg-primary btn text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started
         </Link>
