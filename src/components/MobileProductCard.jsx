@@ -6,26 +6,29 @@ import brand from "../../images/brand.svg";
 const ProductCard = ({ topCard }) => {
   if (topCard) {
     return (
-      <div className="font-Poppins glow-on-hover text-white md:mx-auto md:my-2 md:w-9/12 w-11/12 py-6 px-6 flex gradient-background rounded-lg drop-shadow-lg mt-14">
-        <img className="w-1/5 mx-auto md:max-w-xs" src={piechart} />
+      <div className="font-Poppins flex-col text-white md:mx-auto md:my-2 md:w-9/12 w-11/12 py-6 px-6 flex md:flex-row bg-primary rounded-lg drop-shadow-lg mt-14">
+        <img
+          className="w-3/5 md:w-1/5 py-10 md:py-0 mx-auto md:max-w-xs"
+          src={piechart}
+        />
 
-        <div className="ml-5 max-w-lg">
+        <div className="md:ml-5 max-w-lg">
           <h3 className="font-bold">Ad Integration</h3>
           <p>
             Enable your website with ads to monetize your content and introduce
             new cash-flow to your business.
           </p>
 
-          <div className="flex gap-2">
+          <div className="flex flex-col md:flex-row gap-2">
             <h1 className="text-xl mt-4">
               <span className="font-bold">$499/mo</span> or
             </h1>
 
             <Link
               to="/contactus"
-              className="mt-2 glow-on-hover-transparent flex mx-0 py-0 text-black mobile-btn bg-white"
+              className="btn bg-white text-primary mt-2 md:text-base  text-center text-2xl"
             >
-              <span className="gradient-text">get quote</span>
+              Get quote
             </Link>
           </div>
         </div>
@@ -34,7 +37,7 @@ const ProductCard = ({ topCard }) => {
   }
 
   return (
-    <div className="font-Poppins glow-on-hover text-white md:mx-auto md:ml-32 md:my-2 md:w-9/12 w-11/12 py-6 px-6 flex reverse-gradient-background rounded-lg shadow-lg mt-14">
+    <div className="font-Poppins glow-on-hover bg-accent text-white md:mx-auto md:ml-32 md:my-2 md:w-9/12 w-11/12 py-6 px-6 flex reverse-bg-primary rounded-lg shadow-lg mt-14">
       <div className="ml-5 max-w-md">
         <h3 className="font-bold">Brand Management</h3>
         <p>
@@ -50,9 +53,9 @@ const ProductCard = ({ topCard }) => {
 
           <Link
             to="/contactus"
-            className="mt-2 glow-on-hover-transparent flex mx-0 py-0 text-black mobile-btn bg-white"
+            className="mt-2 flex mx-0 py-0 text-black btn bg-white"
           >
-            <span className="gradient-text">get quote</span>
+            <span className="text-accent">get quote</span>
           </Link>
         </div>
       </div>

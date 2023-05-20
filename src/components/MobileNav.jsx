@@ -27,8 +27,8 @@ const MobileNav = () => {
       </div>
 
       <div className="flex flex-col ml-6 mt-10 gap-10">
-        <ul className="text-2xl gradient-text">
-          <h1 className="font-bold text-5xl">shop</h1>
+        <ul className="text-2xl ">
+          <h1 className="font-bold text-5xl text-gradient">shop</h1>
           <Link onClick={() => setMobileNavOpen(false)} to="/">
             <h4 className="mt-1">home</h4>
           </Link>
@@ -37,8 +37,8 @@ const MobileNav = () => {
           </Link>
         </ul>
 
-        <ul className="text-2xl gradient-text">
-          <h1 className="font-bold text-5xl">company</h1>
+        <ul className="text-2xl ">
+          <h1 className="font-bold text-5xl text-gradient">company</h1>
           <Link onClick={() => setMobileNavOpen(false)} to="/aboutus">
             <h4 className="mt-1">about us</h4>
           </Link>
@@ -52,7 +52,7 @@ const MobileNav = () => {
 
         <Link
           onClick={() => setMobileNavOpen(false)}
-          className="text-white glow-on-hover-fixed mr-6 fixed bottom-10 w-8/12 text-3xl text-center cursor-pointer drop-shadow-lg py-3 gradient-background px-6 font-semibold rounded-md transition duration-300"
+          className="text-white glow-on-hover-fixed mr-6 fixed bottom-10 w-8/12 text-3xl text-center cursor-pointer drop-shadow-lg py-3 bg-primary px-6 font-semibold rounded-md transition duration-300"
           to="/contactus"
         >
           contact us

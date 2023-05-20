@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const PackageCard = ({ packageType }) => {
   if (packageType === "basic") {
     return (
-      <div className="shadow-lg flex flex-col p-6 w-96 md:w-80 mx-auto rounded-lg">
-        <h4 className="text-xl gradient-text">Basic</h4>
+      <div className="shadow-lg flex flex-col p-6 w-80 mx-auto rounded-lg">
+        <h4 className="text-xl text-primary">Basic</h4>
         <h2 className="mt-2 text-sm text-slate-600">
-          <span className="gradient-text font-bold text-4xl">$499</span> / month
+          <span className="text-primary font-bold text-4xl">$499</span> / month
         </h2>
 
         <p className="mt-2 text-slate-600">
@@ -49,7 +49,7 @@ const PackageCard = ({ packageType }) => {
 
         <Link
           to="/contactus"
-          className="gradient-background text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+          className="bg-primary text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started
         </Link>
@@ -59,10 +59,10 @@ const PackageCard = ({ packageType }) => {
 
   if (packageType === "standard") {
     return (
-      <div className="shadow-lg flex flex-col p-6 w-96 md:w-80 mx-auto rounded-lg">
-        <h4 className="text-xl gradient-text">Standard</h4>
+      <div className="shadow-lg flex flex-col p-6 w-80 mx-auto rounded-lg">
+        <h4 className="text-xl text-primary">Standard</h4>
         <h2 className="mt-2 text-sm text-slate-600">
-          <span className="gradient-text font-bold text-4xl">$999</span> / month
+          <span className="text-primary font-bold text-4xl">$999</span> / month
         </h2>
 
         <p className="mt-2 text-slate-600">
@@ -103,7 +103,7 @@ const PackageCard = ({ packageType }) => {
 
         <Link
           to="/contactus"
-          className="gradient-background text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+          className="bg-primary text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started
         </Link>
@@ -113,11 +113,10 @@ const PackageCard = ({ packageType }) => {
 
   if (packageType === "premium") {
     return (
-      <div className="shadow-lg flex flex-col p-6 w-96 md:w-80 mx-auto rounded-lg">
-        <h4 className="text-xl gradient-text">Premium</h4>
+      <div className="shadow-lg flex flex-col p-6 w-80 mx-auto rounded-lg">
+        <h4 className="text-xl text-primary">Premium</h4>
         <h2 className="mt-2 text-sm text-slate-600">
-          <span className="gradient-text font-bold text-4xl">$1999</span> /
-          month
+          <span className="text-primary font-bold text-4xl">$1999</span> / month
         </h2>
 
         <p className="mt-2 text-slate-600">
@@ -158,7 +157,7 @@ const PackageCard = ({ packageType }) => {
 
         <Link
           to="/contactus"
-          className="gradient-background text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
+          className="bg-primary text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started
         </Link>

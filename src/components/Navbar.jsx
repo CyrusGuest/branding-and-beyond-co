@@ -17,14 +17,14 @@ const Navbar = () => {
 
       <div className="my-auto ml-auto hidden md:inline">
         <ul className="flex gap-6 mr-6 text-2xl font-bold ">
-          <li className="my-auto gradient-text hover:-rotate-6 hover:text-3xl duration-200">
+          <li className="my-auto hover:-rotate-6 hover:text-3xl duration-200">
             <Link to="/packages">packages</Link>
           </li>
-          <li className="my-auto gradient-text hover:rotate-6 hover:text-3xl duration-200">
+          <li className="my-auto hover:rotate-6 hover:text-3xl duration-200">
             <Link to="/casestudies">case studies</Link>
           </li>
           <Link to="/contactus">
-            <li className="my-auto cursor-pointer gradient-background text-white glow-on-hover shadow-lg py-2 mt-1 px-6 font-semibold rounded-md transition duration-300">
+            <li className="my-auto cursor-pointer bg-primary text-white glow-on-hover shadow-lg py-2 mt-1 px-6 font-semibold rounded-md transition duration-300">
               contact us
             </li>
           </Link>

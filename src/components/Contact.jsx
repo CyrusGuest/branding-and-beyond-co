@@ -45,7 +45,7 @@ const Contact = () => {
 
   if (complete)
     return (
-      <div className="gradient-background drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+      <div className="bg-primary drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
         <h1 className="text-5xl font-bold my-2">Contact us</h1>
         <p className="text-xl">
           We'll get back to you within one business day.
@@ -62,7 +62,7 @@ const Contact = () => {
 
   if (loading)
     return (
-      <div className="gradient-background drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+      <div className="bg-primary drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
         <h1 className="text-5xl font-bold my-2">Contact us</h1>
         <p className="text-xl">
           We'll get back to you within one business day.
@@ -76,9 +76,11 @@ const Contact = () => {
     );
 
   return (
-    <div className="gradient-background drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 pt-2 flex flex-col text-center text-white rounded-lg">
+    <div className="bg-primary drop-shadow-lg w-5/6 md:w-1/2 mx-auto my-20 py-6 flex flex-col text-center text-white rounded-lg">
       <h1 className="text-5xl font-bold my-2">Contact us</h1>
-      <p className="text-xl">We'll get back to you within one business day.</p>
+      <p className="text-xl max-w-xs mx-auto lg:max-w-md">
+        We'll get back to you within one business day.
+      </p>
 
       <form className="flex flex-col">
         <input
@@ -113,7 +115,7 @@ const Contact = () => {
           className="bg-white w-2/5 mx-auto my-8 glow-on-hover-transparent py-2 rounded-lg drop-shadow-lg font-bold text-xl transition-all"
           onClick={(e) => submitMessage(e)}
         >
-          <span className="gradient-text">send</span>
+          <span className="text-primary">send</span>
         </button>
       </form>
     </div>
