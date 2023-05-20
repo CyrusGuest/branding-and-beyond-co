@@ -4,7 +4,7 @@ import MainGraphic from "../../images/maingraphic.svg";
 
 const LandingGraphic = () => {
   return (
-    <div className="mb-36 mt-20 lg:mt-36 flex flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-16">
+    <div className="mb-36 mt-20 md:mt-28 lg:mt-60 flex flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-16">
       <div className="lg:mr-20 flex flex-col justify-center items-center">
         <h1 className="text-center text-4xl md:text-5xl text-gradient font-bold">
           Code-To-Customers
