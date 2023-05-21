@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="mr-16">
           <h1 className="text-4xl font-bold text-white ">company</h1>
           <ul>
-            <Link to="/aboutus">
+            {/* <Link to="/aboutus">
               <li className="text-xl text-white cursor-pointer mt-2">
                 about us
               </li>
-            </Link>
-            <Link to="/contactus">
+            </Link> */}
+            <Link to="/getstarted">
               <li className="text-xl text-white cursor-pointer mt-2">
                 contact us
               </li>

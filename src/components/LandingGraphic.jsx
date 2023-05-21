@@ -44,7 +44,7 @@ const LandingGraphic = () => {
         </div>
 
         <Link
-          to="/casestudies"
+          to="/getstarted"
           className="text-center btn xxw-72 font-bold bg-primary rounded-lg shadow-lg text-white glow-on-hover mt-10 text-2xl mx-auto"
         >
           Learn More

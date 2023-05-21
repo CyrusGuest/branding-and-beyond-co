@@ -25,7 +25,7 @@ const ProductCard = ({ topCard }) => {
             </h1>
 
             <Link
-              to="/contactus"
+              to="/getstarted"
               className="btn bg-white text-primary mt-2 md:text-base  text-center text-2xl"
             >
               Get quote
@@ -52,7 +52,7 @@ const ProductCard = ({ topCard }) => {
           </h1>
 
           <Link
-            to="/contactus"
+            to="/getstarted"
             className="mt-2 flex mx-0 py-0 text-black btn bg-white"
           >
             <span className="text-accent">get quote</span>

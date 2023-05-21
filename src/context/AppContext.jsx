@@ -4,15 +4,24 @@ export const AppContext = createContext();
 
 export const AppContextProvider = (props) => {
   let [MobileNavOpen, setMobileNavOpen] = useState(false);
-  let [User, setUser] = useState(null);
+  let [userInfo, setUserInfo] = useState({
+    contactInfo: {
+      name: "",
+      email: "",
+      tel: "",
+      description: "",
+    },
+    services: [],
+    completed: false,
+  });
 
   return (
     <AppContext.Provider
       value={{
         MobileNavOpen,
         setMobileNavOpen,
-        User,
-        setUser,
+        userInfo,
+        setUserInfo,
       }}
     >
       {props.children}

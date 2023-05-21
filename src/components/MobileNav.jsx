@@ -36,7 +36,7 @@ const MobileNav = () => {
             <h4 className="mt-1">packages</h4>
           </Link>
         </ul>
-
+        {/* 
         <ul className="text-2xl ">
           <h1 className="font-bold text-5xl text-gradient">company</h1>
           <Link onClick={() => setMobileNavOpen(false)} to="/aboutus">
@@ -48,12 +48,12 @@ const MobileNav = () => {
           <Link onClick={() => setMobileNavOpen(false)} to="/policy">
             <h4 className="mt-1">policy</h4>
           </Link>
-        </ul>
+        </ul> */}
 
         <Link
           onClick={() => setMobileNavOpen(false)}
           className="text-white glow-on-hover-fixed mx-auto fixed bottom-10 w-8/12 text-3xl text-center cursor-pointer drop-shadow-lg py-3 bg-primary px-6 font-semibold rounded-md transition duration-300"
-          to="/contactus"
+          to="/getstarted"
         >
           contact us
         </Link>

@@ -21,3 +21,8 @@
 .btn-hover:hover {
   transform: translateY(-5px);
 }
+
+
+.custom-square-radio {
+  border-radius: 0;
+}

@@ -18,7 +18,7 @@ const Hero = () => {
             our packages
           </button>
         </Link>
-        <Link to="/contactus">
+        <Link to="/getstarted">
           <button className="text-xl btn md:text-2xl btn shadow-lg bg-accent text-white">
             contact us
           </button>
