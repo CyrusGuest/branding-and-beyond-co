@@ -19,7 +19,7 @@ const MobileOrderForm = () => {
     setLoading(true);
 
     const res = await axios.post(
-      "https://api.brandingandbeyond.org/v1/create-inquiry",
+      "https://api.brandingandbeyond.org/create-inquiry",
       inquiry
     );
 
