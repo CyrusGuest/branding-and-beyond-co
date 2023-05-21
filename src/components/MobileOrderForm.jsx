@@ -19,7 +19,7 @@ const MobileOrderForm = () => {
     setLoading(true);
 
     const res = await axios.post(
-      "https://kdrjdhdupg.execute-api.us-east-1.amazonaws.com/production/v1/create-inquiry",
+      "https://api.brandingandbeyond.org/v1/create-inquiry",
       inquiry
     );
 
