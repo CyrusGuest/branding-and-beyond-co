@@ -5,20 +5,20 @@ import coffeeShop from "../../images/coffeeshop.png";
 
 const BarCarousel = () => {
   return (
-    <div className="w-full bg-primary pt-8 pb-16 h-64">
+    <div className="w-full bg-primary pt-8 pb-16">
       <h2 className="text-center text-white text-2xl font-bold">Trusted by</h2>
-      <div className="flex justify-center gap-12 mt-6">
+      <div className="flex justify-center gap-12 mt-6 flex-col md:flex-row">
         <img
           src={jadedPrints}
-          className="h-20 md:h-24 cursor-pointer hover:h-28 duration-200"
+          className="mx-auto md:mx-0 w-64 md:w-auto md:h-24 cursor-pointer md:hover:h-28 duration-200 rounded-lg"
         />
         <img
           src={flowerShop}
-          className="h-20 md:h-24 cursor-pointer hover:h-28 duration-200"
+          className="mx-auto md:mx-0 w-64 md:w-auto md:h-24 cursor-pointer md:hover:h-28 duration-200 rounded-lg"
         />
         <img
           src={coffeeShop}
-          className="h-20 md:h-24 cursor-pointer hover:h-28 duration-200"
+          className="mx-auto md:mx-0 w-64 md:w-auto md:h-24 cursor-pointer md:hover:h-28 duration-200 rounded-lg"
         />
       </div>
     </div>
