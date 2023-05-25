@@ -1,7 +1,7 @@
 import React from "react";
-import pinterestLogo from "../../images/white/pinterest.svg";
-import twitterLogo from "../../images/white/twitter.svg";
-import instaLogo from "../../images/white/insta.svg";
+import jadedPrints from "../../images/jadedprints.png";
+import flowerShop from "../../images/flowershop.png";
+import coffeeShop from "../../images/coffeeshop.png";
 
 const BarCarousel = () => {
   return (
@@ -9,15 +9,15 @@ const BarCarousel = () => {
       <h2 className="text-center text-white text-2xl font-bold">Trusted by</h2>
       <div className="flex justify-center gap-12 mt-6">
         <img
-          src={pinterestLogo}
+          src={jadedPrints}
           className="h-20 md:h-24 cursor-pointer hover:h-28 duration-200"
         />
         <img
-          src={twitterLogo}
+          src={flowerShop}
           className="h-20 md:h-24 cursor-pointer hover:h-28 duration-200"
         />
         <img
-          src={instaLogo}
+          src={coffeeShop}
           className="h-20 md:h-24 cursor-pointer hover:h-28 duration-200"
         />
       </div>

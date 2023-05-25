@@ -8,6 +8,7 @@ import DesktopExplore from "../components/DesktopExplore";
 import Footer from "../components/Footer";
 import BarCarousel from "../components/BarCarousel";
 import LandingGraphic from "../components/LandingGraphic";
+import DataGraphic from "../components/DataGraphic";
 
 const Landing = () => {
   let { MobileNavOpen } = useContext(AppContext);
@@ -25,9 +26,11 @@ const Landing = () => {
 
         <BarCarousel />
 
-        <Explore />
+        <DataGraphic />
 
-        <DesktopExplore />
+        {/* <Explore />
+
+        <DesktopExplore /> */}
 
         <Footer />
       </div>

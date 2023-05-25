@@ -6,7 +6,7 @@ import instaLogo from "../../images/white/insta.svg";
 
 const Footer = () => {
   return (
-    <div className="px-6 pt-6 pb-10  mt-10 md:flex bg-primary">
+    <div className="px-6 pt-6 pb-10 mt-10 flex flex-col lg:flex-row bg-primary">
       <div className="my-8 flex">
         <div className="mr-16">
           <h1 className="text-4xl font-bold text-white ">company</h1>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-10 md:my-8 md:mx-16">
+      <div className="mt-10 lg:my-8 lg:mx-16">
         <h1 className="text-4xl font-bold text-white ">
           get the latest news & offers
         </h1>
@@ -57,7 +57,7 @@ const Footer = () => {
         </form>
       </div>
 
-      <div className="md:my-8 mt-10">
+      <div className="lg:my-8 mt-10">
         <h1 className="text-4xl font-bold text-white ">socials</h1>
         <ul className="mt-2 flex gap-2">
           <img

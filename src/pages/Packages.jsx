@@ -47,7 +47,7 @@ const Packages = () => {
               <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
                 In today's digital-first world, a strong online presence isn't
                 just a nice-to-have—it's a business necessity. With{" "}
-                <span className="font-bold text-primary">
+                <span className="font-bold text-gradient">
                   over 76% of consumers
                 </span>{" "}
                 checking out a business online before visiting in person or
@@ -57,7 +57,7 @@ const Packages = () => {
 
               <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
                 But it's more than just aesthetics. An{" "}
-                <span className="font-bold text-primary">
+                <span className="font-bold text-gradient">
                   SEO-optimized website
                 </span>{" "}
                 ensures you're found by the right people at the right time—those
@@ -69,7 +69,7 @@ const Packages = () => {
               <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
                 Investing in a robust digital presence is investing in your
                 business's future. With our{" "}
-                <span className="font-bold text-primary">
+                <span className="font-bold text-gradient">
                   Code-to-Customers
                 </span>{" "}
                 approach, we aim to bridge the gap between a great website and
@@ -79,8 +79,8 @@ const Packages = () => {
             </div>
 
             <Link
-              to="/casestudies"
-              className="text-center btn xxw-72 font-bold bg-primary rounded-lg shadow-lg text-white glow-on-hover mt-10 text-2xl mx-auto"
+              to="/getstarted"
+              className="text-center btn w-72 font-bold bg-primary rounded-lg shadow-lg text-white glow-on-hover mt-10 text-2xl mx-auto"
             >
               Learn More
             </Link>

@@ -10,14 +10,21 @@ const ContactSection = () => {
   const [loading, setLoading] = useState(false);
 
   const sendInquiry = async () => {
+    if (userInfo.contactInfo.name === "")
+      return alert("Please fill out all fields.");
+    if (userInfo.contactInfo.email === "")
+      return alert("Please fill out all fields.");
+    if (userInfo.contactInfo.tel === "")
+      return alert("Please fill out all fields.");
+    if (userInfo.contactInfo.description === "")
+      return alert("Please fill out all fields.");
+
     const inquiry = {
       contactInfo: userInfo.contactInfo,
       services: userInfo.services,
     };
 
     setLoading(true);
-
-    console.log(inquiry);
 
     const res = await axios.post(
       "https://api.brandingandbeyond.org/create-inquiry",

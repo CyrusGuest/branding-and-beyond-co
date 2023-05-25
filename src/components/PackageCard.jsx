@@ -102,7 +102,7 @@ const PackageCard = ({ packageType }) => {
         </div>
 
         <Link
-          to="/contactus"
+          to="/getstarted"
           className="bg-primary btn text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started
@@ -156,7 +156,7 @@ const PackageCard = ({ packageType }) => {
         </div>
 
         <Link
-          to="/contactus"
+          to="/getstarted"
           className="bg-primary btn text-center text-white font-bold rounded-lg shadow-lg py-3 mt-8 glow-on-hover"
         >
           Get Started

@@ -14,7 +14,7 @@ const LandingGraphic = () => {
           <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
             In today's digital-first world, a strong online presence isn't just
             a nice-to-have—it's a business necessity. With{" "}
-            <span className="font-bold text-primary">
+            <span className="font-bold text-gradient">
               over 76% of consumers
             </span>{" "}
             checking out a business online before visiting in person or making a
@@ -24,7 +24,7 @@ const LandingGraphic = () => {
 
           <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
             But it's more than just aesthetics. An{" "}
-            <span className="font-bold text-primary">
+            <span className="font-bold text-gradient">
               SEO-optimized website
             </span>{" "}
             ensures you're found by the right people at the right time—those
@@ -36,7 +36,7 @@ const LandingGraphic = () => {
           <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
             Investing in a robust digital presence is investing in your
             business's future. With our{" "}
-            <span className="font-bold text-primary">Code-to-Customers</span>{" "}
+            <span className="font-bold text-gradient">Code-to-Customers</span>{" "}
             approach, we aim to bridge the gap between a great website and
             tangible business growth. Together, we can turn your website into
             your most powerful sales tool.
